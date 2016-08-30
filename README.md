@@ -16,6 +16,7 @@ While beyond the scope of this tutorial, it's also pretty straightfoward to inst
 - A digital ocean account with API token and 10+ droplet limit
 - OSX, or a similar OS with unix command shell
 
+
 ## Initial Steps ##
 
 If you haven't yet generated your digital ocean API token, go ahead and do that now. Instructions can be found [here](https://www.digitalocean.com/community/tutorials/how-to-use-the-digitalocean-api-v2)
@@ -50,6 +51,7 @@ You can see all your keys and verify the information by using:
 ```
 curl -X GET -H 'Content-Type: application/json' -H 'Authorization: Bearer [Digital Ocean API Key]' "https://api.digitalocean.com/v2/account/keys"
 ```
+
 
 ## Setting up terraform ##
 
@@ -110,6 +112,7 @@ If at anytime you need to destroy the cluster, run the command:
 terraform destroy
 ```
 
+
 ## Troubleshooting Intermission 1 ##
 
 If you don't get this output, it might be one of the following problems:
@@ -118,6 +121,7 @@ If you don't get this output, it might be one of the following problems:
 - The value of dcos_installer_url has been changed since I created this tutorial
 - Syntax error when updating terraform.tfvars
 - You've ran terraform before and need to clear out some of the files it generated to match the original repo
+
 
 ## Installing Cassandra on DC/OS ##
 
@@ -172,6 +176,7 @@ If the installation completed it should look like:
 }
 ```
 
+
 ## Troubleshooting Intermission 2 ##
 
 If you see the following after runing dcos cassandra connection:
@@ -215,6 +220,7 @@ INSERT INTO demo.map(key, value) VALUES('Devops', 'Fun!');
 
 SELECT * FROM demo.map;
 ```
+
 
 ## Where to go from here ##
 
