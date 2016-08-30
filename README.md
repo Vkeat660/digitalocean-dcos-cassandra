@@ -1,4 +1,4 @@
-# Quickstart: Cassandra Cluster Tutorial on Digital Ocean using CoreOS #
+# Quickstart Tutorial: Cassandra Cluster on Digital Ocean using CoreOS #
 
 This tutorial is a quick and dirty guide for getting a cassandra cluster up and running in less than an hour.
 
