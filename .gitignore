@@ -5,3 +5,4 @@
 !output.tf
 !vars.tf
 !README.md
+terraform.tfvars
