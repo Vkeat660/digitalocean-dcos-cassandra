@@ -2,7 +2,7 @@
 
 This tutorial is a quick and dirty guide for getting a cassandra cluster up and running in less than an hour.
 
-While beyond the scope of this tutorial, it's also pretty straightfoward to install Spark, Kafka, or whatever else you need on dc/os once the cluster is up and running.
+While beyond the scope of this tutorial, it's also pretty straightforward to install Spark, Kafka, or whatever else you need on dc/os once the cluster is up and running.
 
 ## Tech Stack ##
 
@@ -125,7 +125,7 @@ If you don't get this output, it might be one of the following problems:
 
 ## Installing Cassandra on DC/OS ##
 
-In the output from terraform you should have been given a link, but likely it will need 5-10 minutes for it to work. Go grab your favorite caffinated beverage.
+In the output from terraform you should have been given a link, but likely it will need 5-10 minutes for it to work. Go grab your favorite caffeinated beverage.
 
 Once it starts working, login with your github account to create the admin account.
 
@@ -179,7 +179,7 @@ If the installation completed it should look like:
 
 ## Troubleshooting Intermission 2 ##
 
-If you see the following after runing dcos cassandra connection:
+If you see the following after running dcos cassandra connection:
 
 ```
 {
@@ -190,9 +190,9 @@ If you see the following after runing dcos cassandra connection:
 
 It means that dcos marathon wasn't able to complete the installation task. In my case this was because my nodes only had 4GB of ram initially, but when I increased to 8GB the problem resolved itself.
 
-This may be a good time to familiarize yourself with marathon and how to access logs in order to diagnos problems, since similar issues can occur with installing spark and kafka.
+This may be a good time to familiarize yourself with marathon and how to access logs in order to diagnose problems, since similar issues can occur with installing spark and kafka.
 
-Other issues can occur if you skipped authenticaion using **dcos auth login**, or have since moved to another bash shell window and forgot to reauthenticate.
+Other issues can occur if you skipped authentication using **dcos auth login**, or have since moved to another bash shell window and forgot to reauthenticate.
 
 ## Testing that the installation works! ##
 
@@ -224,7 +224,7 @@ SELECT * FROM demo.map;
 
 ## Where to go from here ##
 
-Now that you've got a cassandra cluster up and running, it's relatively easy to add injestion and analytics on top of it. Although not covered in this tutorial, you might want to try to following:
+Now that you've got a cassandra cluster up and running, it's relatively easy to add ingestion and analytics on top of it. Although not covered in this tutorial, you might want to try to following:
 
 ```
 dcos package install spark
